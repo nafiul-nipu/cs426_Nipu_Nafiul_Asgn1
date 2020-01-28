@@ -16040,9 +16040,10 @@ GameObject:
   - component: {fileID: 33960365490722782}
   - component: {fileID: 23559298292754456}
   - component: {fileID: 64207366997375056}
+  - component: {fileID: 275018488}
   m_Layer: 0
   m_Name: House_Stone
-  m_TagString: Untagged
+  m_TagString: House
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16054,7 +16055,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540221056507266}
-  m_LocalRotation: {x: 0.000000015454313, y: 0.70710665, z: 0.00000001545431, w: 0.70710695}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.70710677}
   m_LocalPosition: {x: -0.21921349, y: -0.59, z: -10.476992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -16154,6 +16155,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: cefa7b5b43aa7824d80336f93ecbe2eb, type: 3}
+--- !u!114 &275018488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540221056507266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4464cb11033ba1847a6bd030fe477194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
 --- !u!1 &1549697077896078
 GameObject:
   m_ObjectHideFlags: 0

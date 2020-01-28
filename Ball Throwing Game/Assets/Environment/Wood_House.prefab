@@ -393,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228591365808570}
   m_LocalRotation: {x: 9.769963e-15, y: -0, z: -0.000000021855696, w: 1}
-  m_LocalPosition: {x: 4.08, y: 0, z: 6}
+  m_LocalPosition: {x: 4.1, y: 0, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4037926034658810}
@@ -850,7 +850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351135471049472}
   m_LocalRotation: {x: -0.25244138, y: 0.6605099, z: 0.66051, w: 0.25244132}
-  m_LocalPosition: {x: 65.42001, y: 1.4000001, z: 10.898674}
+  m_LocalPosition: {x: 6.22, y: 0.17, z: -1.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4037926034658810}
@@ -1971,9 +1971,10 @@ GameObject:
   - component: {fileID: 33647964774764322}
   - component: {fileID: 23370228078153028}
   - component: {fileID: 64149540268901072}
+  - component: {fileID: 1020865916988038160}
   m_Layer: 0
   m_Name: Wood_House
-  m_TagString: Untagged
+  m_TagString: House
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2089,6 +2090,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: bc26e37faef03d243b7786ffcf0bea53, type: 3}
+--- !u!114 &1020865916988038160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704281255932970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4464cb11033ba1847a6bd030fe477194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
 --- !u!1 &1715647205062682
 GameObject:
   m_ObjectHideFlags: 0

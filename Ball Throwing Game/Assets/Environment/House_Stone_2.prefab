@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1118635030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118635031}
+  m_Layer: 0
+  m_Name: LoweWalls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118635031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118635030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4600664017612304}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011975238964386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,9 +2099,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4600664017612304}
+  - component: {fileID: 1812841988}
   m_Layer: 0
   m_Name: House_Stone_2
-  m_TagString: Untagged
+  m_TagString: House
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2128,15 +2159,29 @@ Transform:
   - {fileID: 4252111539532204}
   - {fileID: 4084391053134572}
   - {fileID: 4525763998003170}
-  - {fileID: 7474555986713368966}
+  - {fileID: 1118635031}
   - {fileID: 622816460079299829}
   - {fileID: 5275963442997758665}
   - {fileID: 1651977512775127861}
+  - {fileID: 7474555986713368966}
   - {fileID: 4471116704774564257}
   - {fileID: 8899916547842487246}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1812841988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099603013651024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4464cb11033ba1847a6bd030fe477194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
 --- !u!1 &1099695642308538
 GameObject:
   m_ObjectHideFlags: 0
@@ -37197,7 +37242,7 @@ Transform:
   - {fileID: 4733069424338060}
   - {fileID: 4354506352502270}
   m_Father: {fileID: 4600664017612304}
-  m_RootOrder: 41
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &525962684863081076
 GameObject:
@@ -38813,7 +38858,7 @@ Transform:
   - {fileID: 888031152955744807}
   - {fileID: 811533125129605169}
   m_Father: {fileID: 4600664017612304}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4255714362180424685
 GameObject:
@@ -39529,7 +39574,7 @@ Transform:
   - {fileID: 4208035196195182}
   - {fileID: 4392982628125234}
   m_Father: {fileID: 4600664017612304}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5720153254132892576
 GameObject:
