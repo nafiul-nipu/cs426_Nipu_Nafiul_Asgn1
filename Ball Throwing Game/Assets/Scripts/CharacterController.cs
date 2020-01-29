@@ -4,6 +4,7 @@ using UnityEngine;
  
 public class CharacterController : MonoBehaviour
 {
+    public BulletCount bulletCountManager;
     public float speed = 25.0f;
     public float rotationSpeed = 90;
     public float force = 700f;
@@ -12,12 +13,15 @@ public class CharacterController : MonoBehaviour
  
     Rigidbody rb;
     Transform t;
+
+    int bulletCount;
  
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         t = GetComponent<Transform>();
+        bulletCount = 10;
     }
  
     // Update is called once per frame
@@ -36,10 +40,20 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             rb.AddForce(t.up * force);
  
-        if (Input.GetButtonDown("Fire1")){
-            GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
-            newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 5;
-            newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
+        if (Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.Mouse1)){
+            if(bulletCount == 0){
+                bulletCountManager.MinusBullet(bulletCount);
+                print("Zero Ball Left");
+            }else{
+                GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
+                newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
+                newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * 1500);
+                bulletCount--;
+                bulletCountManager.MinusBullet(bulletCount);
+                print(bulletCount + " Left");
+
+            }
+            
         }
     }
 }

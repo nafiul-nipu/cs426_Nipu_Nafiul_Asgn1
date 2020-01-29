@@ -15,12 +15,12 @@ public class Score : MonoBehaviour
     {
         total_score = 0;
         scoreText.text = "Score: " + total_score;
-        print("start point" + total_score);
+        // print("start point" + total_score);
     }
    
     public void AddPoint(int score)
     {
-        print("hitted" + score);
+        // print("hitted" + score);
         total_score += score;       
         scoreText.text = "Score: " + total_score;
         // score++;
